@@ -4,7 +4,7 @@
   <style>
     body {
       text-align: center;
-      }
+    }
     .circular {
       width: 300px;
       height: 300px;
@@ -15,7 +15,48 @@
       box-shadow: 0 0 8px rgba(0, 0, 0, .8);
       -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
       -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-      }
+    }
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      background-color: #b0e0e6;
+    }
+    .pTable {
+      display: block;
+      align: center;
+      width: 50%;
+      margin: 0 auto;
+      /* width: 100%; */
+    }
+    /* .pTable #inner { */
+      /* width: 50%; */
+      /* margin: 0 auto; */
+    /* } */
+    .pTableHeading, .pTableBody, .pTableFoot, .pTableRow{
+      clear: both;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .pTableHead, .pTableFoot{
+      background-color: #DDD;
+      font-weight: bold;
+    }
+    .pTableCell, .pTableHead {
+      border: 1pc solid #999999;
+      float: left;
+      height: 17px;
+      overflow: hidden;
+      padding: 3px 1.8%;
+      width: 208px;
+    }
+    .pTable:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
   </style>
 <head>
 <body>
@@ -29,6 +70,21 @@ Today is <%= Time.now.strftime(*'%A') %><br>
 <p>
 Check out my projects and writing below.
 
+<h2>Projects</h2>
+<div class"pTable">
+  <div class="pTableRow">
+    <div class="pTableHead"><strong>Name</strong></div>
+    <div class="pTableHead"><strong>Idea</strong></div>
+    <div class="pTableHead"><strong>Idea</strong></div>
+  </div>
+  <div class="pTableRow">
+    <div class="pTableCell">Watermarker</div>
+    <div class="pTableCell">make pdf stamping simple</div>
+    <div class="pTableCell">make pdf stamping simple</div>
+  </div>
+</div>
+&nbsp;<p>
+&nbsp;<p>
 If you want to know more about me that's cool too.
 <p>
 I'm not really a bear.
