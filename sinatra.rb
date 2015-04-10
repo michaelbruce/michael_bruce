@@ -9,6 +9,8 @@ get '/' do
   erb :index
 end
 
+get '/watermarker' { erb :watermarker }
+
 # get '/download' do
 #   content_type :json
 #   {"params" => params}.to_json
