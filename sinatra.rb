@@ -9,7 +9,7 @@ get '/' do
   erb :index
 end
 
-get '/watermarker' { erb :watermarker }
+get '/watermarker' do erb :watermarker end
 
 # get '/download' do
 #   content_type :json

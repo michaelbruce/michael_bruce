@@ -2,7 +2,7 @@ body {
   text-align: center;
 }
 h1 {
-  color:blue;
+  color:#000000;
   font-family:verdana;
   font-size:300%;
 }
@@ -33,17 +33,14 @@ p {
 .pTable {
   display: block;
   align: center;
-  width: 50%;
-  margin: 0 auto;
-  /* width: 100%; */
-}
-/* .pTable #inner { */
-  /* width: 50%; */
+  width: 100%;
   /* margin: 0 auto; */
-/* } */
+  margin-left:auto; 
+  margin-right:auto;
+}
 .pTableHeading, .pTableBody, .pTableFoot, .pTableRow{
   clear: both;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 .pTableHead, .pTableFoot{
@@ -52,15 +49,16 @@ p {
 }
 .pTableCell, .pTableHead {
   border-radius: 25px;
-  border: 4px solid #999999;
+  /* border: 4px solid #999999; */
   /* border: 1pc solid #999999; */
-  float: left;
-  height: 70px;
-  overflow: hidden;
-  padding: 3px 1.8%;
-  margin: 10px;
-  width: 208px;
+  /* float: left; */
+  /* height: 70px; */
+  /* overflow: hidden; */
+  /* padding: 3px 1.8%; */
+  /* margin: 10px; */
+  /* width: 208px; */
 }
 .pTable:after {
   visibility: hidden;
   display: block;
+}
