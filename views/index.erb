@@ -93,8 +93,8 @@ Check out my projects and writing below.
   </div>
   <div class="pTableRow">
     <div class="pTableCell">CSS Design</div>
-    <div class="pTableCell">Android</div>
-    <div class="pTableCell">Euler</div>
+    <div class="pTableCell" id="android">Android</div>
+    <div class="pTableCell" id="euler" onclick="$('#test-blurb').toggle();">Euler</div>
   </div>
 </div>
 <!-- <div class="center"> -->
@@ -114,5 +114,12 @@ Currently working with
 <a href="http://www.singletrack.com"><img src="/images/singletrack.png" width="300" class="singletrack"></a>
 <!-- </div> -->
 <script type="text/javascript" src="/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#android').click(function(e) {
+    alert('hiii');
+  });
+});
+</script>
 </body>
 </html>
