@@ -1,59 +1,107 @@
 <html>
-  <head>
-    <title>Michael Bruce</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
-    <head>
-      <body>
-        <h1>Michael Bruce</h1>
-        <p>
-        <strong>michael@bruce.com</strong>
-        <p>
-        Today is <%= Time.now.strftime(*'%A') %><br>
-        <p>&nbsp;
-        <p>
-        <center><img src=/images/bear.jpg class="circular"></center>
-        <p>&nbsp;
-        <p>
-        Check out my projects and writing below.
-        <p>
-        <img src="/images/divider.png" width="80" alt="---">
-        <p>
-        <div class="pTable">
-          <div class="pTableRow">
-            <div class="pTableCell">Something</div>
-          </div>
-        </div>
-        <!-- <div class="pTable"> -->
-        <!--   <div class="pTableRow"> -->
-        <!--     <div class="pTableCell"><a href="/watermarker">Watermarker</a></div> -->
-        <!--     <div class="pTableCell">Terminal Setup</div> -->
-        <!--     <div class="pTableCell">Medical System</div> -->
-        <!--   </div> -->
-        <!--   <div class="pTableRow"> -->
-        <!--     <div class="pTableCell">Video tutorials</div> -->
-        <!--     <div class="pTableCell">Data in ruby</div> -->
-        <!--     <div class="pTableCell">SOQL Admin</div> -->
-        <!--   </div> -->
-        <!--   <div class="pTableRow"> -->
-        <!--     <div class="pTableCell">CSS Design</div> -->
-        <!--     <div class="pTableCell">Android</div> -->
-        <!--     <div class="pTableCell">Euler</div> -->
-        <!--   </div> -->
-        <!--   <div class="pTableRow"> -->
-        <!--     <div class="pTableCell">Linux Ruler</div> -->
-        <!--     <div class="pTableCell">Idea #7874</div> -->
-        <!--     <div class="pTableCell">Idea #2225</div> -->
-        <!--   </div> -->
-        <!-- </div> -->
-        <p>
-        <img src="/images/divider.png" width="80" alt="---">
-        <p>
-        If you want to know more about me that's cool too.
-        <p>
-        I'm not really a bear.
-        <p>
-        Currently developing at
-        <p>
-        <img src="/images/singletrack.png" width="300" class="singletrack">
-      </body>
+  <!-- TODO: move css here when table is finalised -->
+  <!-- <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf&#45;8"> -->
+  <style>
+    body {
+      text-align: center;
+    }
+    .circular {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(http://link-to-your/image.jpg) no-repeat;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    }
+    .singletrack {
+      box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    }
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      background-color: #b0e0e6;
+    }
+    .pTable {
+      display: block;
+      display:block;
+      overflow:auto;
+    }
+    .pTableHeading, .pTableBody, .pTableFoot, .pTableRow{
+      clear: both;
+      width: 70%;
+      margin-left:15%;
+      margin-right:15%;
+      overflow:auto;
+    }
+    .pTableHead, .pTableFoot{
+      background-color: #DDD;
+      font-weight: bold;
+    }
+    .pTableCell, .pTableHead {
+      border-radius: 25px;
+      border: 4px solid #999999;
+      float: left;
+      height: 70px;
+      overflow: hidden;
+      padding: 3px 1.8%;
+      margin: 10px;
+      width: 208px;
+    }
+    .pTable:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+  </style>
+<head>
+<body>
+<h1>Michael Bruce</h1>
+<p>
+<strong>michael@bruce.com</strong>
+<p>
+Today is <%= Time.now.strftime(*'%A') %><br>
+<p>&nbsp;
+<p>
+<center><img src=/images/bear.jpg class="circular"></center>
+<p>&nbsp;
+<p>
+Check out my projects and writing below.
+<p>
+<img src="/images/divider.png" width="80" alt="---">
+<p>
+<div class"pTable">
+  <div class="pTableRow">
+    <div class="pTableCell">Watermarker</div>
+    <div class="pTableCell">Terminal Setup</div>
+    <div class="pTableCell">Medical System</div>
+  </div>
+  <div class="pTableRow">
+    <div class="pTableCell">Video tutorials</div>
+    <div class="pTableCell">Data in ruby</div>
+    <div class="pTableCell">SOQL Admin</div>
+  </div>
+  <div class="pTableRow">
+    <div class="pTableCell">CSS Design</div>
+    <div class="pTableCell">Android</div>
+    <div class="pTableCell">Euler</div>
+  </div>
+</div>
+<!-- <div class="center"> -->
+<img src="/images/divider.png" width="80" alt="---">
+<p>
+If you want to know more about me that's cool too.
+<p>
+I'm not really a bear.
+<p>
+Currently working for
+<p>
+<img src="/images/singletrack.png" width="300" class="singletrack">
+<!-- </div> -->
+</body>
 </html>
